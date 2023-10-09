@@ -30,7 +30,7 @@ Our app currently offers the following features:
 
 - **Wishlist**: For products users like but don't intend to purchase immediately, they can add them to their wishlist for future reference.
 
-- **Payment Process (Under Development)**: We are actively working on the payment process feature, which will enable users to complete purchases securely.
+- **Payment Process**: We are actively working on the payment process feature, which will enable users to complete purchases securely.
 
 ## Access the App
 
