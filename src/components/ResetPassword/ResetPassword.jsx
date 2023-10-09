@@ -50,12 +50,12 @@ export default function ResetPassword({ title }) {
     let { data } = await axios
       .post(`${baseURl}/api/v1/auth/verifyResetCode`, values)
       .catch((err) => {
-        toast.error(err.response.data.message, {
+        toast.error(err?.response.data.message, {
           position: toast.POSITION.BOTTOM_LEFT,
         });
       });
     if (data.status === "Success") {
-      toast.success(data.status, {
+      toast.success(data?.status, {
         position: toast.POSITION.BOTTOM_LEFT,
       });
       navigate("/changepassword");

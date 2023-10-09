@@ -20,15 +20,15 @@ export default function Login({ title }) {
       .post("https://ecommerce.routemisr.com/api/v1/auth/signin", values)
       .catch((err) => {
         setLoading(false);
-        toast.error(err.response.data.message, {
+        toast.error(err?.response.data.message, {
           position: toast.POSITION.BOTTOM_LEFT,
         });
       });
-    if (data.message === "success") {
+    if (data?.message === "success") {
       setLoading(false);
-      localStorage.setItem("userToken", data.token);
-      setUserToken(data.token);
-      setuserName(jwt_decode(data.token).name);
+      localStorage.setItem("userToken", data?.token);
+      setUserToken(data?.token);
+      setuserName(jwt_decode(data?.token).name);
       navigate("/");
     }
   }

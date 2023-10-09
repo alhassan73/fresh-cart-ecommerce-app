@@ -17,11 +17,11 @@ export default function ChangePassword({ title }) {
       .put(`${baseURl}/api/v1/auth/resetPassword`, values)
       .catch((err) => {
         setLoading(false);
-        toast.error(err.response.data.message, {
+        toast.error(err?.response.data.message, {
           position: toast.POSITION.BOTTOM_LEFT,
         });
       });
-    if (data.token) {
+    if (data?.token) {
       setLoading(false);
       toast.success("Successfully Updated", {
         position: toast.POSITION.BOTTOM_LEFT,

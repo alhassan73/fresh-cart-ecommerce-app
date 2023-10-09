@@ -17,11 +17,11 @@ export default function Register({ title }) {
       .post("https://ecommerce.routemisr.com/api/v1/auth/signup", values)
       .catch((err) => {
         setLoading(false);
-        toast.error(err.response.data.message, {
+        toast.error(err?.response.data.message, {
           position: toast.POSITION.BOTTOM_LEFT,
         });
       });
-    if (data.message === "success") {
+    if (data?.message === "success") {
       setLoading(false);
 
       navigate("/Login");
