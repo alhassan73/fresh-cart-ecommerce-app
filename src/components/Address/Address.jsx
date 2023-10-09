@@ -18,7 +18,7 @@ export default function Address({ title }) {
   }
   async function submitAddress(values) {
     if (param.paymentmethod === "online") {
-      const url = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+      const url = `${window.location.protocol}//${window.location.host}`;
       let response = await payOnline(cartId, headers, values, url);
       window.location.href = response.data.session.url;
     } else if (param.paymentmethod === "cash") {
