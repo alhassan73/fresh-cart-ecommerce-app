@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Fresh Cart E-commerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Fresh Cart E-commerce App repository! This web application is currently in development and is being built using React.js. The app boasts several key features and integrations to ensure a seamless shopping experience.
 
-## Available Scripts
+## Technologies and Libraries Used
 
-In the project directory, you can run:
+Here are the technologies and libraries we've employed in the development of this app:
 
-### `npm start`
+- **React.js**: We've built the app using React.js, a powerful library for creating interactive user interfaces.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Formik and Yup**: Formik handles form input and validation, while Yup is used for schema validation.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Axios**: Axios manages HTTP requests to APIs, enabling us to fetch and manage data efficiently.
 
-### `npm test`
+- **React Query**: We utilize React Query for streamlined data fetching, caching, and state management.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Bootstrap Framework**: The Bootstrap framework is responsible for styling the app's user interface, ensuring a responsive and visually appealing design.
 
-### `npm run build`
+- **Sass**: Sass is used to preprocess CSS files, simplifying the management and styling of the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React Router DOM**: We've implemented React Router DOM to create a Single Page Application (SPA), facilitating seamless navigation between different views within the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Our app currently offers the following features:
 
-### `npm run eject`
+- **Browse Products**: Users can effortlessly browse available products, view product details, and explore various categories.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Add to Cart**: Users can add products to their shopping cart, which keeps track of selected items.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Wishlist**: For products users like but don't intend to purchase immediately, they can add them to their wishlist for future reference.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Payment Process (Under Development)**: We are actively working on the payment process feature, which will enable users to complete purchases securely.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Access the App
 
-## Learn More
+You can access the app and explore its features by visiting the following link (App deployed on Vercel): [Fresh Cart E-commerce App](https://fresh-cart-ecommerce-app.vercel.app/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Please note that this app is a work in progress, and we may add new features and improvements over time. We appreciate your interest in the Fresh Cart E-commerce App! If you have any feedback or encounter any issues, please don't hesitate to open an issue or reach out to us.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Clone the App
 
-### Code Splitting
+To create your own clone of the app, simply download the files and start by downloading dependencies using the integrated terminal:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```shell
+npm install
+npm start
