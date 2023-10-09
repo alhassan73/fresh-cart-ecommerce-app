@@ -1,0 +1,265 @@
+$green : rgb(81, 164, 81);
+$red : #ff0000;
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &::-webkit-scrollbar {
+      width: 5px;
+      background: white;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 128, 0, 0.358);
+      border-radius: 100vh;
+    }
+  }
+  a,
+  a:hover {
+    text-decoration: none !important;
+    color: black !important;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  .vh-90{
+    height: 90vh !important;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .product-container {
+    transition: transform 0.5s;
+    &:hover{
+        transform: scale(1.05);
+
+    }
+    .add-cart {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 300%);
+        transition: 0.5s;
+    }
+    .btn{
+      transition: 0.5s;
+    }
+    &:hover .add-cart {
+        transform: translate(-50%, 0%);
+        box-shadow: 0px 0px 90px 10px rgba(0, 0, 0, 0.32);
+        
+      }
+      .wishlist-delete{
+        top: 5%;
+        left: -400%;
+      }
+      .wishlist-add{
+        top: 5%;
+        right: -400%;
+      }
+      &:hover .wishlist-delete{
+        left: 5%;
+      }
+      &:hover .wishlist-add{
+        right: 5%;
+      }
+  }
+  
+  .productimage {
+    mix-blend-mode: multiply !important;
+  }
+  
+  .cart {
+    width: 28px;
+    height: 28px;
+    .fa-cart-shopping {
+        position: relative;
+        top: 4px;
+        z-index: 1;
+        font-size: 24px;
+      }
+      .count {
+        font-size: 11px;
+        width: 17px;
+        height: 17px;
+        line-height: 16px;
+      }
+  }
+.wishlist-header{
+  font-size: 80px !important;
+}
+  
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  .form-control:focus {
+    box-shadow: 0 0 0 3px rgba(123, 201, 123, 0.542) !important;
+  }
+  .text-green {
+    color: $green;
+  }
+  .bg-green-light {
+    background-color: $green;
+    color: white;
+    transition: 0.2s;
+    &:hover{
+        background-color: rgb(41, 115, 41) !important;
+        color: white !important;
+    
+    }
+  }
+  
+  .fab {
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        color:$green;
+    }
+  }
+ 
+  .bg-gray{
+    background-color: #f8f9fa9e;
+  }
+
+
+  .heart{
+    font-size: 24px !important;
+    
+    &.filled {
+      animation: fillHeart 2s infinite alternate  !important;
+    }
+  }
+  
+  @keyframes fillHeart {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+      color: rgb(110, 176, 82);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+      color: rgb(84, 156, 53);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+      color: rgb(46, 132, 78); 
+    }
+    
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+      color: rgb(21, 104, 52); 
+    }
+  }
+  
+.fav-container{
+  position: absolute;
+  top: 5%;
+  right: 5%; 
+  z-index: 999;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  
+}
+  .container-fav input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container-fav {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .container-fav svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s;
+    fill: #a1999944;
+  }
+  
+  .container-fav svg:hover {
+    transform: scale(1.1);
+    fill:$red; 
+  }
+  
+  .container-fav input:checked ~ svg {
+    fill:$red; 
+  }
+  
+  .bg-red{
+    background-color:#D82039 !important;
+  }
+
+  .navbar {
+    .dropdown-menu .dropdown-item:active{
+      background-color: unset !important;
+      color:unset !important;
+    }
+    .dropdown-menu .dropdown-item:hover{
+      background-color: $green !important;
+    color: white !important;    }
+    }   
+
+    .transition{
+      transition: 0.4s;
+    }
+
+    .order-container:hover{
+      transform: scale(1.02);
+    }
+
+    .active{
+      color: $green;
+    }
+
+
+    .search-input {
+      border: 0;
+      outline: 0;
+      background-color: transparent;
+      color: rgb(0, 0, 0);
+      padding-left: 0.625rem;
+    }
+    .search-icon {
+      color: $green;
+    }
+    .search-container {
+      background-color: #ffffff !important;
+      z-index: 99;
+    }
+    .brand-container:hover{
+      transform: scale(1.04);
+      box-shadow: 0 3px  5px #5d5d5d68 !important;
+    }
+    .category-container:hover{
+      transform: scale(1.04);
+      filter: drop-shadow(0 3px  5px #5d5d5d68 ) !important;
+    }
+    .border-place{
+      border-right: 3px solid gainsboro !important;
+    }
+
+   @media(min-width:768px){
+    .slide{
+      height: 600px;
+    }
+   }
+    
+    @media(max-width:767px){
+      .border-place{
+        border: unset !important;
+      }
+    }

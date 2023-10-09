@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+  background: white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 128, 0, 0.358);
+  border-radius: 100vh;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.vh-90 {
+  height: 90vh !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.product-container {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.product-container:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.product-container .add-cart {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, 300%);
+          transform: translate(-50%, 300%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.product-container .btn {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.product-container:hover .add-cart {
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-box-shadow: 0px 0px 90px 10px rgba(0, 0, 0, 0.32);
+          box-shadow: 0px 0px 90px 10px rgba(0, 0, 0, 0.32);
+}
+.product-container .wishlist-delete {
+  top: 5%;
+  left: -400%;
+}
+.product-container .wishlist-add {
+  top: 5%;
+  right: -400%;
+}
+.product-container:hover .wishlist-delete {
+  left: 5%;
+}
+.product-container:hover .wishlist-add {
+  right: 5%;
+}
+
+.productimage {
+  mix-blend-mode: multiply !important;
+}
+
+.cart {
+  width: 28px;
+  height: 28px;
+}
+.cart .fa-cart-shopping {
+  position: relative;
+  top: 4px;
+  z-index: 1;
+  font-size: 24px;
+}
+.cart .count {
+  font-size: 11px;
+  width: 17px;
+  height: 17px;
+  line-height: 16px;
+}
+
+.wishlist-header {
+  font-size: 80px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(123, 201, 123, 0.542) !important;
+          box-shadow: 0 0 0 3px rgba(123, 201, 123, 0.542) !important;
+}
+
+.text-green {
+  color: rgb(81, 164, 81);
+}
+
+.bg-green-light {
+  background-color: rgb(81, 164, 81);
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.bg-green-light:hover {
+  background-color: rgb(41, 115, 41) !important;
+  color: white !important;
+}
+
+.fab {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.fab:hover {
+  color: rgb(81, 164, 81);
+}
+
+.bg-gray {
+  background-color: rgba(248, 249, 250, 0.6196078431);
+}
+
+.heart {
+  font-size: 24px !important;
+}
+.heart.filled {
+  -webkit-animation: fillHeart 2s infinite alternate !important;
+          animation: fillHeart 2s infinite alternate !important;
+}
+
+@-webkit-keyframes fillHeart {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+    color: rgb(110, 176, 82);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+    color: rgb(84, 156, 53);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+    color: rgb(46, 132, 78);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+    color: rgb(21, 104, 52);
+  }
+}
+
+@keyframes fillHeart {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+    color: rgb(110, 176, 82);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+    color: rgb(84, 156, 53);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+    color: rgb(46, 132, 78);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+    color: rgb(21, 104, 52);
+  }
+}
+.fav-container {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 999;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+}
+
+.container-fav input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container-fav {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container-fav svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  fill: rgba(161, 153, 153, 0.2666666667);
+}
+
+.container-fav svg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  fill: #ff0000;
+}
+
+.container-fav input:checked ~ svg {
+  fill: #ff0000;
+}
+
+.bg-red {
+  background-color: #D82039 !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:active {
+  background-color: unset !important;
+  color: unset !important;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: rgb(81, 164, 81) !important;
+  color: white !important;
+}
+
+.transition {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.order-container:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.active {
+  color: rgb(81, 164, 81);
+}
+
+.search-input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding-left: 0.625rem;
+}
+
+.search-icon {
+  color: rgb(81, 164, 81);
+}
+
+.search-container {
+  background-color: #ffffff !important;
+  z-index: 99;
+}
+
+.brand-container:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-box-shadow: 0 3px 5px rgba(93, 93, 93, 0.4078431373) !important;
+          box-shadow: 0 3px 5px rgba(93, 93, 93, 0.4078431373) !important;
+}
+
+.category-container:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-filter: drop-shadow(0 3px 5px rgba(93, 93, 93, 0.4078431373)) !important;
+          filter: drop-shadow(0 3px 5px rgba(93, 93, 93, 0.4078431373)) !important;
+}
+
+.border-place {
+  border-right: 3px solid gainsboro !important;
+}
+
+@media (min-width: 768px) {
+  .slide {
+    height: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .border-place {
+    border: unset !important;
+  }
+}
