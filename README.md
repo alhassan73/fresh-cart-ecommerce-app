@@ -34,7 +34,7 @@ Our app currently offers the following features:
 
 ## Access the App
 
-You can access the app and explore its features by visiting the following link: [Fresh Cart E-commerce App](https://fresh-cart-ecommerce-app.vercel.app/)
+You can access the app and explore its features by visiting the following link (App deployed on Vercel): [Fresh Cart E-commerce App](https://fresh-cart-ecommerce-app.vercel.app/)
 
 Please note that this app is a work in progress, and we may add new features and improvements over time. We appreciate your interest in the Fresh Cart E-commerce App! If you have any feedback or encounter any issues, please don't hesitate to open an issue or reach out to us.
 
