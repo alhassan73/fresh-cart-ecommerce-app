@@ -42,6 +42,13 @@ export default function Orders() {
                       {order.createdAt.split("T").slice(0, 1)}
                     </h2>
                     <span className="h6 text-light-emphasis">
+                      To : {order.shippingAddress.details} ,{" "}
+                      {order.shippingAddress.city}
+                    </span>
+                    <span className="h6 text-light-emphasis">
+                      Phone : {order.shippingAddress.phone}
+                    </span>
+                    <span className="h6 text-light-emphasis">
                       Order ID &#62; {order.id}
                     </span>
                   </div>
