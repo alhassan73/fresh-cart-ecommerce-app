@@ -66,7 +66,7 @@ function payOnline(cartId, allheaders, addressValues,url) {
 function payCash(cartId, allheaders, addressValues) {
   return axios
     .post(
-      `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}`,
+      `https://ecommerce.routemisr.com/api/v1/orders/${cartId}`,
       { shippingAddress: addressValues },
       { headers: allheaders }
     )

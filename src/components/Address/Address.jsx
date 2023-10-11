@@ -22,7 +22,8 @@ export default function Address({ title }) {
       let response = await payOnline(cartId, headers, values, url);
       window.location.href = response.data.session.url;
     } else if (param.paymentmethod === "cash") {
-      await payCash(cartId, headers, values);
+      let response = await payCash(cartId, headers, values);
+      console.log(response);
       navigate("/allorders");
     }
   }
