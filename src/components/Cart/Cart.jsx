@@ -123,7 +123,6 @@ export default function Cart({ title }) {
                             .slice(0, 2)
                             .join(" ")}
                         </h4>
-                        <p>"Unknown"</p>
                         <span className="text-green h6 fw-bold">
                           {product.price} EGP
                         </span>
