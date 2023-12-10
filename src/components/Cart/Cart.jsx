@@ -123,7 +123,7 @@ export default function Cart({ title }) {
                             .slice(0, 2)
                             .join(" ")}
                         </h4>
-                        <p>{product.product.brand.name}</p>
+                        <p>{product.product.brand.name === null && "Unknown"}</p>
                         <span className="text-green h6 fw-bold">
                           {product.price} EGP
                         </span>
